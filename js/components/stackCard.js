@@ -1,4 +1,4 @@
-import { iconCode, iconDatabase, iconGitBranch, iconList } from "./icons.js?v=93244813b8";
+import { iconCode, iconDatabase, iconGitBranch, iconList } from "./icons.js?v=09a2de1e55";
 
 const icons = {
     code: iconCode,

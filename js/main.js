@@ -1,5 +1,5 @@
-import { navigateTo, renderRoute, setProjectFilter } from "./router.js?v=93244813b8";
-import { closeConsolePanel, handleConsoleSubmit, openConsolePanel } from "./components/virtualConsole.js?v=93244813b8";
+import { navigateTo, renderRoute, setProjectFilter } from "./router.js?v=09a2de1e55";
+import { closeConsolePanel, handleConsoleSubmit, openConsolePanel } from "./components/virtualConsole.js?v=09a2de1e55";
 
 document.addEventListener("click", (event) => {
     const internalLink = event.target.closest("a[href^='/']");
