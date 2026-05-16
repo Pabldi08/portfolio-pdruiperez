@@ -1,7 +1,7 @@
-import { getProjectBySlug } from "../data/projects.js?v=cc68560cfc";
-import { iconDownload, iconGitHub, iconTerminal } from "../components/icons.js?v=cc68560cfc";
-import { getAccentClasses, renderPreview, tagList } from "../components/preview.js?v=cc68560cfc";
-import { renderVirtualConsole } from "../components/virtualConsole.js?v=cc68560cfc";
+import { getProjectBySlug } from "../data/projects.js?v=cf5e129c45";
+import { iconDownload, iconGitHub, iconTerminal } from "../components/icons.js?v=cf5e129c45";
+import { getAccentClasses, renderPreview, tagList } from "../components/preview.js?v=cf5e129c45";
+import { renderVirtualConsole } from "../components/virtualConsole.js?v=cf5e129c45";
 
 export function projectDetailView(slug) {
     const project = getProjectBySlug(slug);
@@ -14,7 +14,7 @@ export function projectDetailView(slug) {
 
     return `
         <section class="mx-auto max-w-6xl px-6 py-20">
-            <a href="/proyectos" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-emerald-300">&larr; Volver a proyectos</a>
+            <a href="/proyectos" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-sky-300">&larr; Volver a proyectos</a>
 
             <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
                 <div>
@@ -103,7 +103,7 @@ function artifactButton(project, classes) {
 function notFoundView() {
     return `
         <section class="mx-auto max-w-3xl px-6 py-24">
-            <a href="/proyectos" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-emerald-300">&larr; Volver a proyectos</a>
+            <a href="/proyectos" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-sky-300">&larr; Volver a proyectos</a>
             <h1 class="text-5xl font-black">Proyecto no encontrado</h1>
             <p class="text-description mt-5 text-zinc-400">La vista que buscas no existe o el proyecto ha cambiado de identificador.</p>
         </section>

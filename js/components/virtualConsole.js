@@ -1,5 +1,5 @@
-import { getProjectBySlug } from "../data/projects.js?v=cc68560cfc";
-import { getAccentClasses } from "./preview.js?v=cc68560cfc";
+import { getProjectBySlug } from "../data/projects.js?v=cf5e129c45";
+import { getAccentClasses } from "./preview.js?v=cf5e129c45";
 
 export function renderVirtualConsole(project) {
     if (!project.console) {
@@ -135,7 +135,7 @@ function renderConsoleLines(lines) {
 
 function renderConsoleLine(line, tone = "default") {
     const toneClass = tone === "prompt"
-        ? "text-emerald-300"
+        ? "text-sky-300"
         : tone === "muted"
             ? "text-zinc-400"
             : "text-zinc-200";
@@ -160,13 +160,13 @@ function renderConsolePreview(project) {
     return `
         <div class="rounded-2xl border border-dashed border-white/10 bg-zinc-950/70 p-6">
             <p class="text-xs font-bold uppercase tracking-[0.24em] text-zinc-500">Vista /view</p>
-            <div class="mt-4 rounded-2xl border border-white/10 bg-gradient-to-br from-emerald-400/10 via-cyan-400/10 to-transparent p-6">
+            <div class="mt-4 rounded-2xl border border-white/10 bg-gradient-to-br from-sky-400/10 via-cyan-400/10 to-transparent p-6">
                 <p class="text-lg font-black text-white">${project.console?.preview?.title ?? "Demo visual"}</p>
                 <p class="text-description mt-3 text-sm leading-6 text-zinc-400">
                     ${project.console?.preview?.description ?? "Este bloque puede sustituirse por una captura o animacion real del proyecto."}
                 </p>
                 <div class="mt-5 grid grid-cols-6 gap-2">
-                    <span class="aspect-square rounded-lg bg-emerald-400/30"></span>
+                    <span class="aspect-square rounded-lg bg-sky-400/30"></span>
                     <span class="aspect-square rounded-lg bg-white/10"></span>
                     <span class="aspect-square rounded-lg bg-white/10"></span>
                     <span class="aspect-square rounded-lg bg-white/10"></span>

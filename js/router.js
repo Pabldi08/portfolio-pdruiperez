@@ -1,8 +1,8 @@
-import { homeView } from "./views/homeView.js?v=cc68560cfc";
-import { projectDetailView } from "./views/projectDetailView.js?v=cc68560cfc";
-import { projectsView } from "./views/projectsView.js?v=cc68560cfc";
-import { getProjectBySlug } from "./data/projects.js?v=cc68560cfc";
-import { setupScrollAnimations } from "./animations.js?v=cc68560cfc";
+import { homeView } from "./views/homeView.js?v=cf5e129c45";
+import { projectDetailView } from "./views/projectDetailView.js?v=cf5e129c45";
+import { projectsView } from "./views/projectsView.js?v=cf5e129c45";
+import { getProjectBySlug } from "./data/projects.js?v=cf5e129c45";
+import { setupScrollAnimations } from "./animations.js?v=cf5e129c45";
 
 let activeProjectFilter = "Todos";
 
@@ -65,10 +65,10 @@ export function renderRoute() {
 function notFoundView() {
     return `
         <section class="mx-auto max-w-3xl px-6 py-24 text-center">
-            <p class="text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">404</p>
+            <p class="text-sm font-bold uppercase tracking-[0.25em] text-sky-400">404</p>
             <h1 class="mt-4 text-5xl font-black tracking-tight">P&aacute;gina no encontrada</h1>
             <p class="mt-5 text-lg text-zinc-400">La ruta que buscas no existe o ha cambiado de direcci&oacute;n.</p>
-            <a href="/" class="mt-10 inline-flex rounded-full bg-emerald-400 px-7 py-3 font-bold text-zinc-950 transition hover:bg-emerald-300">
+            <a href="/" class="mt-10 inline-flex rounded-full bg-sky-400 px-7 py-3 font-bold text-zinc-950 transition hover:bg-sky-300">
                 Volver al inicio
             </a>
         </section>

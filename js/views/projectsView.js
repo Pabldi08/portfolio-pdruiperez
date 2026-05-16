@@ -1,5 +1,5 @@
-import { getAllTags, getProjectsByTag } from "../data/projects.js?v=cc68560cfc";
-import { projectCard } from "../components/projectCard.js?v=cc68560cfc";
+import { getAllTags, getProjectsByTag } from "../data/projects.js?v=cf5e129c45";
+import { projectCard } from "../components/projectCard.js?v=cf5e129c45";
 
 export function projectsView(activeFilter) {
     const tags = getAllTags();
@@ -7,9 +7,9 @@ export function projectsView(activeFilter) {
 
     return `
         <section class="mx-auto max-w-6xl px-6 py-20">
-            <a href="/" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-emerald-300">&larr; Volver al inicio</a>
+            <a href="/" class="mb-8 inline-flex text-sm font-bold text-zinc-400 transition hover:text-sky-300">&larr; Volver al inicio</a>
             <div class="mb-10 max-w-3xl">
-                <p class="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">Todos los proyectos</p>
+                <p class="mb-2 text-sm font-bold uppercase tracking-[0.25em] text-sky-400">Todos los proyectos</p>
                 <h1 class="text-5xl font-black tracking-tight md:text-7xl">El taller completo.</h1>
                 <p class="text-description mt-5 text-lg leading-8 text-zinc-400">
                     Aqu&iacute; aparecen tanto los proyectos terminados como los que siguen creciendo. Cada tarjeta abre una vista con m&aacute;s detalle,
@@ -29,8 +29,8 @@ export function projectsView(activeFilter) {
 }
 
 function filterButton(tag, activeFilter) {
-    const activeClasses = "border-emerald-400 bg-emerald-400 text-zinc-950";
-    const idleClasses = "border-white/10 bg-white/[0.03] text-zinc-300 hover:border-emerald-400/60 hover:text-emerald-300";
+    const activeClasses = "border-sky-400 bg-sky-400 text-zinc-950";
+    const idleClasses = "border-white/10 bg-white/[0.03] text-zinc-300 hover:border-sky-400/60 hover:text-sky-300";
     const buttonClasses = activeFilter === tag ? activeClasses : idleClasses;
 
     return `

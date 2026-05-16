@@ -94,19 +94,19 @@ function booterView() {
                         <span>pdruiperez UEFI <span class="text-zinc-500">v2.6.0</span></span>
                         <span class="text-zinc-500">Arch Linux x86_64</span>
                         <span>CPU: Intel Core i7-12700H</span>
-                        <span>RAM: 16384 MB <span class="text-emerald-400">OK</span></span>
+                        <span>RAM: 16384 MB <span class="text-sky-400">OK</span></span>
                         <span>Boot: /dev/nvme0n1p1</span>
                     </div>
                     <div class="border-y border-zinc-800 py-2 grid sm:grid-cols-[1fr_auto_1fr] items-center gap-1 font-bold tracking-wide">
-                        <p class="text-zinc-400"><span class="text-emerald-400">↑↓</span> Select&nbsp;&nbsp;&nbsp;<span class="text-emerald-400">Enter</span> Boot</p>
-                        <h1 id="boot-title" class="text-center text-emerald-400">pdruiperez Bootloader</h1>
-                        <p class="text-zinc-400 sm:text-right"><span class="text-emerald-400">B</span> Blank Entry</p>
+                        <p class="text-zinc-400"><span class="text-sky-400">↑↓</span> Select&nbsp;&nbsp;&nbsp;<span class="text-sky-400">Enter</span> Boot</p>
+                        <h1 id="boot-title" class="text-center text-sky-400">pdruiperez Bootloader</h1>
+                        <p class="text-zinc-400 sm:text-right"><span class="text-sky-400">B</span> Blank Entry</p>
                     </div>
                 </header>
 
                 <div class="flex flex-1 flex-col items-center justify-center py-10 gap-10">
                     <div class="text-center">
-                        <pre class="mx-auto w-fit max-w-full overflow-x-auto whitespace-pre text-left text-[0.55rem] leading-[1.15] text-emerald-400 sm:text-xs" aria-label="Logo PABLO en ASCII">${asciiLogo()}</pre>
+                        <pre class="mx-auto w-fit max-w-full overflow-x-auto whitespace-pre text-left text-[0.55rem] leading-[1.15] text-sky-400 sm:text-xs" aria-label="Logo PABLO en ASCII">${asciiLogo()}</pre>
                         <p class="mt-3 text-xs text-zinc-600 tracking-[0.25em]">pablo d&iacute;az ruip&eacute;rez &middot; software developer</p>
                     </div>
 
@@ -124,7 +124,7 @@ function booterView() {
                 </div>
 
                 <footer class="border-t border-zinc-800 pt-3 pb-1 text-xs flex flex-wrap justify-between gap-2 text-zinc-600">
-                    <span>Seleccione una entrada y pulse <span class="font-bold text-emerald-300">Enter</span> para arrancar.</span>
+                    <span>Seleccione una entrada y pulse <span class="font-bold text-sky-300">Enter</span> para arrancar.</span>
                     <span class="hidden sm:inline text-zinc-700">pdruiperez.com</span>
                     <span class="sr-only">Use flecha arriba, flecha abajo y Enter para seleccionar.</span>
                 </footer>
@@ -137,8 +137,8 @@ function booterView() {
 function bootOption(option, index) {
     const selected = index === selectedOptionIndex;
     const activeClasses = selected
-        ? "bg-emerald-400 text-zinc-950"
-        : "text-zinc-300 hover:bg-white/[0.06] hover:text-emerald-300";
+        ? "bg-sky-400 text-zinc-950"
+        : "text-zinc-300 hover:bg-white/[0.06] hover:text-sky-300";
 
     return `
         <button type="button"
